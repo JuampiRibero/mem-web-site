@@ -1,0 +1,19 @@
+.head_left {
+  background: #FFEEDE;
+  color: #FB9431;
+  font-weight: bold;
+  padding: 7px 20px;
+  border-radius: 20px;
+}
+
+.head_right {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  /* aspect-ratio: 16/9; */
+  object-fit: cover;
+}
