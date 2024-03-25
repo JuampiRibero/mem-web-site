@@ -1,0 +1,32 @@
+textarea {
+  resize: none;
+  field-sizing: content;
+  max-height: 100px;
+}
+
+.form {
+  /* background: #fff; */
+  box-shadow: 0 30px 60px 0 rgba(242, 213, 213, 0.75);
+  border-radius: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  /* padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0; */
+}
+
+.btn {
+  background-color: #F2BDBD;
+  border-color: #F2BDBD;
+  color: white;
+  max-width: 100px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #F2BDBD;
+  border-color: #F2BDBD;
+}

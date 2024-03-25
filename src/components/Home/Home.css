@@ -1,7 +1,7 @@
 .head_left {
-  background: #FFEEDE;
-  color: #FB9431;
-  font-weight: bold;
+  background: #F2BDBD;
+  color: white;
+  /* font-weight: bold; */
   padding: 7px 20px;
   border-radius: 20px;
 }

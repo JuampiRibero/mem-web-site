@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ServiceCardListContainer from "../ServiceCardListContainer/ServiceCardListContainer";
+import Contact from "../Contact/Contact";
 import "./Home.css";
 
 const Home = () => {
@@ -10,9 +11,9 @@ const Home = () => {
           <Col md={6}>
             <div className="head_left">
               <div className="w-75 mt-2">
-                <h1>Lorem ipsum dolor</h1>
+                <h1>Lic. María Eugenia Mazzoni</h1>
               </div>
-              <p className="text-secondary">
+              <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
                 delectus quo perspiciatis, dicta id modi neque voluptatibus
                 soluta repudiandae officiis voluptatum optio voluptate animi
@@ -40,6 +41,7 @@ const Home = () => {
           <HeaderFoot />
         </div> */}
         <ServiceCardListContainer/>
+        <Contact />
       </Container>
     </div>
   );

@@ -9,42 +9,38 @@ import {
   faPeopleGroup,
   faRocket,
 } from "@fortawesome/free-solid-svg-icons";
-// import "./CardListContainer.scss";
+import "./ServiceCardListContainer.css"
 
 const ServicesList = [
   {
     logo: <FontAwesomeIcon icon={faPeopleGroup} className="icon" />,
-    name: "Gestión del Cambio",
-    description: "Facilitamos la transformación de nuestros clientes",
+    name: "Lorem ipsum 1",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, delectus quo perspiciatis, dicta id modi neque voluptatibus soluta repudiandae officiis voluptatum optio voluptate animi porro aspernatur voluptates magni sequi.",
   },
   {
     logo: <FontAwesomeIcon icon={faRocket} className="icon" />,
-    name: "Agilidad",
-    description:
-      "Co creamos un mindset sostenido en metodologías y prácticas ágiles",
+    name: "Lorem ipsum 2",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, delectus quo perspiciatis, dicta id modi neque voluptatibus soluta repudiandae officiis voluptatum optio voluptate animi porro aspernatur voluptates magni sequi.",
   },
   {
     logo: <FontAwesomeIcon icon={faLightbulb} className="icon" />,
-    name: "Innovación",
-    description:
-      "Espacios experimentales para convertir problemas en oportunidades",
+    name: "Lorem ipsum 3",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, delectus quo perspiciatis, dicta id modi neque voluptatibus soluta repudiandae officiis voluptatum optio voluptate animi porro aspernatur voluptates magni sequi.",
   },
   {
     logo: <FontAwesomeIcon icon={faFlaskVial} className="icon" />,
-    name: "Labs",
-    description: "Workshops y trainings en competencias",
+    name: "Lorem ipsum 4",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, delectus quo perspiciatis, dicta id modi neque voluptatibus soluta repudiandae officiis voluptatum optio voluptate animi porro aspernatur voluptates magni sequi.",
   },
   {
     logo: <FontAwesomeIcon icon={faMagnifyingGlass} className="icon" />,
-    name: "Diagnósticos",
-    description:
-      "Investigamos y relevamos la realidad presente de cada organización",
+    name: "Lorem ipsum 5",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, delectus quo perspiciatis, dicta id modi neque voluptatibus soluta repudiandae officiis voluptatum optio voluptate animi porro aspernatur voluptates magni sequi.",
   },
   {
     logo: <FontAwesomeIcon icon={faComments} className="icon" />,
-    name: "Coaching",
-    description:
-      "Ontológico, Ejecutivo, Sistémico. Individual y de Equipos. Eneagrama",
+    name: "Lorem ipsum 6",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, delectus quo perspiciatis, dicta id modi neque voluptatibus soluta repudiandae officiis voluptatum optio voluptate animi porro aspernatur voluptates magni sequi.",
   },
 ];
 
@@ -64,8 +60,11 @@ const ServiceCardListContainer = () => {
   }, []);
 
   return (
-    <div className="body container"  id={"services"}>
-      <div className="row my-5">
+    <div id={"services"}>
+      <h1 className="mt-5 mb-0">
+        Servicios
+      </h1>
+      <div className="my-5 contenedor">
         <ServiceCardList services={services} />
       </div>
     </div>
