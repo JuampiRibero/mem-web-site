@@ -1,8 +1,43 @@
-.navbar-bg {
+:root {
+  --BottomOffset: 2.5px;
+  --LineHeight: 5px;
+  --LineColor: #F6264D;
+}
+
+.navbar {
   background-color: #F2BDBD;
 }
 
-@media (max-width: 992px) {
+.navbar-a {
+  color: white !important;
+  position: relative;
+	z-index: 1;
+}
+
+.navbar-a:before {
+  position: absolute;
+  content: '';
+  display: block;
+  z-index: -1;
+  background: var(--LineColor);
+  width: 0;
+  height: var(--LineHeight);
+  bottom: var(--BottomOffset);
+  border-radius: var(--LineHeight);
+  left: 50%;
+  transition: 0.4s cubic-bezier(0.25, 0.1, 0, 2.02);
+}
+
+.navbar-a:hover {
+  color: #FF5C7B !important;
+}
+
+.navbar-a:hover:before {
+  width: calc(100% + var(--LineHeight));
+  left: calc(var(--LineHeight) / -2);
+}
+
+@media (width <=992px) {
   .logo {
     width: 100px;
   }

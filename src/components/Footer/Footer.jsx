@@ -1,8 +1,12 @@
-import { Container, Col } from "react-bootstrap"
-import { Link } from 'react-router-dom';
+import { Container, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import "./Footer.css"
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -19,26 +23,28 @@ const Footer = () => {
             />
           </div>
           <div className="d-flex justify-content-center pt-3">
-              <ul className="col-md-3 col-sm-1 d-flex justify-content-between list-unstyled mb-0">
-                <Link to="/">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </Link>
-                <Link to="/" target="_blank">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </Link>
-                <Link to="/" target="_blank">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
-              </ul>
+            <ul className="col-md-3 col-sm-1 d-flex justify-content-between list-unstyled mb-0">
+              <Link to="/">
+                <FontAwesomeIcon icon={faInstagram} />
+              </Link>
+              <Link to="/" target="_blank">
+                <FontAwesomeIcon icon={faFacebook} />
+              </Link>
+              <Link to="/" target="_blank">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </Link>
+            </ul>
           </div>
-          <div className="footer-copyright text-center py-3">© 2024 Lic. María Eugenia Mazzoni. Todos los derechos reservados.</div>
+          <div className="footer-copyright text-center py-3">
+            © 2024 Lic. María Eugenia Mazzoni. Todos los derechos reservados.
+          </div>
         </Col>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
 
 // const Footer = () => {
 //   return (

@@ -1,13 +1,13 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import './NavBar.css'
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
     <>
-      <Navbar expand="lg" className="navbar-bg" >
-        <Container >
-        <Link to="/">
+      <Navbar expand="lg" className="navbar">
+        <Container>
+          <Link to="/">
             <img
               src="https://i.ibb.co/6nC8sbB/logo-navbar-l.png"
               width="150"
@@ -21,16 +21,40 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-0">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#sobre-mi">Sobre mi</Nav.Link>
-              <Nav.Link href="#servicios">Servicios</Nav.Link>
-              <Nav.Link href="#contacto">Contacto</Nav.Link>
+              <Nav.Link
+                to="/"
+                onClick={() => window.location.replace("/")}
+                className="navbar-a"
+              >
+                HOME
+              </Nav.Link>
+              <Nav.Link
+                to="/#about-me"
+                onClick={() => window.location.replace("/#about-me")}
+                className="navbar-a"
+              >
+                SOBRE MI
+              </Nav.Link>
+              <Nav.Link
+                to="/#services"
+                onClick={() => window.location.replace("/#services")}
+                className="navbar-a"
+              >
+                SERVICIOS
+              </Nav.Link>
+              <Nav.Link
+                to="/#contact"
+                onClick={() => window.location.replace("/#contact")}
+                className="navbar-a"
+              >
+                CONTACTO
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
   );
-}
+};
 
 export default NavBar;
