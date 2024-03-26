@@ -1,9 +1,10 @@
-.footer {
-  /* background: rgb(246, 231, 231); */
-}
-
 .footer-logo {
   object-fit: cover;
   aspect-ratio: 1;
   max-block-size: 100px;
+}
+
+.footer-social {
+  color: #F2BDBD;
+  font-size: x-large;
 }

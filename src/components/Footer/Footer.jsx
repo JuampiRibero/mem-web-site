@@ -24,13 +24,13 @@ const Footer = () => {
           </div>
           <div className="d-flex justify-content-center pt-3">
             <ul className="col-md-3 col-sm-1 d-flex justify-content-between list-unstyled mb-0">
-              <Link to="/">
+              <Link to="/" className="footer-social" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} />
               </Link>
-              <Link to="/" target="_blank">
+              <Link to="/" className="footer-social" target="_blank">
                 <FontAwesomeIcon icon={faFacebook} />
               </Link>
-              <Link to="/" target="_blank">
+              <Link to="/" className="footer-social" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />
               </Link>
             </ul>
@@ -45,31 +45,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// const Footer = () => {
-//   return (
-//     <>
-//       <footer className="page-footer font-small blue pt-4">
-//         <div className="container-fluid text-center text-md-left">
-//             <div >
-//                 <div>
-//                     <h5 className="text-uppercase">LOGO</h5>
-//                 </div>
-//                 <div className="row">
-//                     <ul className="col">
-//                         <li className="col-md-12 mb-md-0 mb-3"><a href="#!">Link 1</a></li>
-//                         <li className="col-md-12 mb-md-0 mb-3"><a href="#!">Link 2</a></li>
-//                         <li className="col-md-12 mb-md-0 mb-3"><a href="#!">Link 3</a></li>
-//                     </ul>
-//                 </div>
-//             </div>
-//         </div>
-//         <div className="footer-copyright text-center py-3">© 2020 Copyright:
-//             <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-//         </div>
-//       </footer>
-//     </>
-//   )
-// }
-
-// export default Footer

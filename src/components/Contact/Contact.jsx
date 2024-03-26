@@ -2,7 +2,8 @@
 // import Form from "react-bootstrap/Form";
 
 import { useState } from "react";
-import "./Contact.css"
+import { Container } from "react-bootstrap";
+import "./Contact.css";
 
 const useForm = (initialData, onValidate) => {
   const [form, setForm] = useState(initialData);
@@ -48,10 +49,8 @@ const useForm = (initialData, onValidate) => {
 const Contact = () => {
   const initialData = {
     nombre: "",
-    apellido: "",
+    telefono: "",
     correo: "",
-    celular: "",
-    asunto: "",
     mensaje: "",
   };
 
@@ -68,10 +67,10 @@ const Contact = () => {
       errors.nombre = 'El campo "Nombre" solo acepta letras y espacios.';
     }
 
-    if (!form.apellido.trim()) {
-      errors.apellido = 'El campo "Apellido" no debe ser vacio.';
-    } else if (!regexName.test(form.apellido)) {
-      errors.apellido = 'El campo "Apellido" solo acepta letras y espacios.';
+    if (!form.telefono.trim()) {
+      errors.telefono = 'El campo "Teléfono" no debe ser vacio.';
+    } else if (!regexPhone.test(form.telefono)) {
+      errors.telefono = 'El campo "Teléfono" solo acepta números y espacios.';
     }
 
     if (!form.correo.trim()) {
@@ -79,18 +78,6 @@ const Contact = () => {
     } else if (!regexEmail.test(form.correo)) {
       errors.correo =
         'El campo "Correo Electrónico" contiene un formato no valido.';
-    }
-
-    if (!form.celular.trim()) {
-      errors.celular = 'El campo "Celular" no debe ser vacio.';
-    } else if (!regexPhone.test(form.celular)) {
-      errors.celular = 'El campo "Celular" solo acepta números y espacios.';
-    }
-
-    if (!form.asunto.trim()) {
-      errors.asunto = 'El campo "Asunto" no debe ser vacio.';
-    } else if (!regexName.test(form.asunto)) {
-      errors.asunto = 'El campo "Asunto" solo acepta letras y espacios.';
     }
 
     if (!form.mensaje.trim()) {
@@ -108,10 +95,18 @@ const Contact = () => {
   );
 
   return (
-    <>
-      <h1 className="my-5" id={'contact'}>Contacto</h1>
+    <Container>
+      <h1 className="mt-5 mb-3" id={"contact"}>
+        ¡Hablemos! Contáctame sin compromiso
+      </h1>
+      <h5 className="mb-5">
+        Completa este formulario y me pondré en contacto contigo para evacuar
+        todas las dudas.
+      </h5>
       <form className="form" onSubmit={handleSubmit}>
-        <label className="form-label mb-1">Nombre</label>
+        <label className="form-label mb-1">
+          Nombre<span className="text-danger"> *</span>
+        </label>
         <input
           type="text"
           className="form-control"
@@ -122,18 +117,22 @@ const Contact = () => {
         {errors.nombre && (
           <div className="alert alert-danger p-1">{errors.nombre}</div>
         )}
-        <label className="form-label mt-2 mb-1">Apellido</label>
+        <label className="form-label mt-2 mb-1">
+          Teléfono<span className="text-danger"> *</span>
+        </label>
         <input
-          type="text"
+          type="phone"
           className="form-control"
-          name="apellido"
-          value={form.apellido}
+          name="telefono"
+          value={form.telefono}
           onChange={handleChange}
         />
-        {errors.apellido && (
-          <div className="alert alert-danger p-1">{errors.apellido}</div>
+        {errors.telefono && (
+          <div className="alert alert-danger p-1">{errors.telefono}</div>
         )}
-        <label className="form-label mt-2 mb-1">Correo Electrónico</label>
+        <label className="form-label mt-2 mb-1">
+          Correo Electrónico<span className="text-danger"> *</span>
+        </label>
         <input
           type="email"
           className="form-control"
@@ -144,31 +143,9 @@ const Contact = () => {
         {errors.correo && (
           <div className="alert alert-danger p-1">{errors.correo}</div>
         )}
-
-        <label className="form-label mt-2 mb-1">Celular</label>
-        <input
-          type="text"
-          className="form-control"
-          name="celular"
-          value={form.celular}
-          onChange={handleChange}
-        />
-        {errors.asunto && (
-          <div className="alert alert-danger p-1">{errors.celular}</div>
-        )}
-
-        <label className="form-label mt-2 mb-1">Asunto</label>
-        <input
-          type="text"
-          className="form-control"
-          name="asunto"
-          value={form.asunto}
-          onChange={handleChange}
-        />
-        {errors.asunto && (
-          <div className="alert alert-danger p-1">{errors.asunto}</div>
-        )}
-        <label className="form-label mt-2 mb-1">Mensaje</label>
+        <label className="form-label mt-2 mb-1">
+          Mensaje<span className="text-danger"> *</span>
+        </label>
         <textarea
           className="form-control"
           name="mensaje"
@@ -182,7 +159,7 @@ const Contact = () => {
           {loading ? "Enviando..." : "Enviar"}
         </button>
       </form>
-    </>
+    </Container>
   );
 };
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
 import ServiceCardList from "../ServiceCardList/ServiceCardList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -60,14 +61,14 @@ const ServiceCardListContainer = () => {
   }, []);
 
   return (
-    <div id={"services"}>
+    <Container id={"services"}>
       <h1 className="mt-5 mb-0">
         Servicios
       </h1>
       <div className="my-5 contenedor">
         <ServiceCardList services={services} />
       </div>
-    </div>
+    </Container>
   );
 };
 

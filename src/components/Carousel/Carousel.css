@@ -1,0 +1,7 @@
+.carousel img {
+  height: 100dvh;
+  width: 100dvw;
+  position: sticky;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}

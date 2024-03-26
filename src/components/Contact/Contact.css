@@ -1,32 +1,32 @@
 textarea {
-  resize: none;
-  field-sizing: content;
+  resize: none !important;
+  field-sizing: content !important;
   max-height: 100px;
 }
 
 .form {
-  /* background: #fff; */
   box-shadow: 0 30px 60px 0 rgba(242, 213, 213, 0.75);
   border-radius: 20px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  /* padding-top: 5px;
-  padding-bottom: 5px;
-  left: 0;
-  right: 0; */
+}
+
+.form-control:focus {
+  border-color: #F2BDBD !important;
+  box-shadow: 0 0 0 0.25rem rgba(242, 189, 189, 0.25) !important;
 }
 
 .btn {
-  background-color: #F2BDBD;
-  border-color: #F2BDBD;
-  color: white;
+  background-color: #F2BDBD  !important;
+  border-color: #F2BDBD  !important;
+  color: white  !important;
   max-width: 100px;
 }
 
 .btn:hover {
-  background-color: white;
-  color: #F2BDBD;
-  border-color: #F2BDBD;
+  background-color: white  !important;
+  color: #F2BDBD  !important;
+  border-color: #F2BDBD  !important;
 }

@@ -22,8 +22,8 @@ const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-0">
             <Nav className="me-auto">
               <Nav.Link
-                to="/"
-                onClick={() => window.location.replace("/")}
+                to="/#home"
+                onClick={() => window.location.replace("/#home")}
                 className="navbar-a"
               >
                 HOME
