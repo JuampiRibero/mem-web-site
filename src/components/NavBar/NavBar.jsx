@@ -9,7 +9,7 @@ const NavBar = () => {
         <Container>
           <Link to="/">
             <img
-              src="https://i.ibb.co/6nC8sbB/logo-navbar-l.png"
+              src="https://i.ibb.co/VvbT4cB/logo-navbar.png"
               width="150"
               height=""
               className="d-inline-block align-top logo"

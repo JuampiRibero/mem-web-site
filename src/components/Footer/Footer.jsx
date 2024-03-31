@@ -15,7 +15,7 @@ const Footer = () => {
         <Col>
           <div className="text-center">
             <img
-              src="https://i.ibb.co/NrHKKV7/logo-footer.png"
+              src="https://i.ibb.co/PFsfdH6/logo-footer.png"
               className="footer-logo"
               alt="Logo MEM"
               title="MEM"

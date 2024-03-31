@@ -13,37 +13,37 @@ function ControlledCarousel() {
     <Carousel activeIndex={index} onSelect={handleSelect} id={"home"}>
       <Carousel.Item>
         <img
-          src="https://i.ibb.co/pLfW8SX/ancianos-sentados-sofa-amarillo-con-enfermera.jpg"
+          src="https://i.ibb.co/yWvjQcL/ancianos-sentados-sofa-amarillo-con-enfermera.jpg"
           alt="Ancianos sentados en sofa amarillo con enfermera"
           title="Ancianos sentados en sofa amarillo con enfermera"
           loading="lazy"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h1>First slide label</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src="https://i.ibb.co/nLpVyjS/medico-controlando-la-presi-n-arterial-paciente.jpg"
+          src="https://i.ibb.co/LkyTf68/medico-controlando-la-presion-arterial-paciente.jpg"
           alt="Medico controlando la presion arterial paciente"
           title="Medico controlando la presion arterial paciente"
           loading="lazy"
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h1>Second slide label</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src="https://i.ibb.co/GF2Qypv/anciana-siendo-alimentada.jpg"
+          src="https://i.ibb.co/pQ46jPV/anciana-siendo-alimentada.jpg"
           alt="Anciana siendo alimentada"
           title="Anciana siendo alimentada"
           loading="lazy"
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h1>Third slide label</h1>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>

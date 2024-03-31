@@ -6,7 +6,7 @@ const About = () => {
     <Container className="mt-5" id={"about-me"}>
       <Row>
         <Col md={6}>
-          <div className="head_left">
+          <div className="head-left">
             <div className="w-75 mt-2">
               <h1>Lic. María Eugenia Mazzoni</h1>
             </div>
@@ -25,10 +25,12 @@ const About = () => {
           </div>
         </Col>
         <Col md={6}>
-          <div className="d-flex justify-content-center align-items-center shadow-sm rounded">
+          <div className="head-right d-flex justify-content-center align-items-center">
             <img
-              src="https://i.ibb.co/hV6gfGG/retrato-doctora-mujer.jpg"
+              src="https://i.ibb.co/qR3Ts0L/retrato-doctora-mujer.jpg"
               alt="Foto Doctora Mujer"
+              title="Foto Doctora Mujer"
+              loading="lazy"
               className="image"
             />
           </div>

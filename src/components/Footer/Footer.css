@@ -8,3 +8,9 @@
   color: #F2BDBD;
   font-size: x-large;
 }
+
+@media (width <=576px) {
+  .footer-social {
+    padding: 0 20px;
+  }
+}

@@ -1,4 +1,5 @@
 import Card from "react-bootstrap/Card";
+import "./ServiceCard.css"
 
 const ServiceCard = ({ service }) => {
   return (

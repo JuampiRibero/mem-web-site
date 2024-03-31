@@ -4,3 +4,24 @@
       minmax(250px, 1fr));
   gap: 32px;
 }
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 50%;
+  }
+
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.cards {
+  view-timeline-name: --cards;
+  view-timeline-axis: block;
+  animation-timeline: --cards;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}

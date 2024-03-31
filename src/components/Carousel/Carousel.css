@@ -1,7 +1,26 @@
 .carousel img {
   height: 100dvh;
   width: 100dvw;
-  position: sticky;
+  /* position: sticky; */
   object-fit: cover;
   aspect-ratio: 16/9;
+  mask-image: linear-gradient(black 75%, transparent);
+}
+
+.carousel-caption {
+  bottom: 18.5rem !important;
+}
+
+.carousel-indicators {
+  margin-bottom: 2.5rem !important;
+}
+
+@media (width <=576px) {
+  .carousel-caption {
+    bottom: 21.5rem !important;
+  }
+
+  .carousel img {
+    height: 100%;
+  }
 }
